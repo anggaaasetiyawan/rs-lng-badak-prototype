@@ -5,7 +5,12 @@
 **Status:** 🎓 Education Only / Portfolio Demo  
 **Tidak untuk produksi** — ini adalah prototype untuk kebutuhan pembelajaran dan portfolio.
 
+<p align="center">
+  <img src="screenshots/Home.png" alt="RS LNG Badak Website Preview" width="100%" />
+</p>
+
 ---
+
 ## Disclaimer
 
 ⚠️ **Project ini adalah prototype untuk kebutuhan education dan portfolio.**
