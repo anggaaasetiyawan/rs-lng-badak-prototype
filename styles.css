@@ -1666,6 +1666,96 @@ input {
   margin-left: 6px;
 }
 
+/* ─── Karir Section ─── */
+
+.karir {
+  background: var(--pale);
+}
+
+.karir-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.karir-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  padding: 28px;
+  position: relative;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.karir-card:hover {
+  box-shadow: 0 12px 30px rgba(154, 27, 46, 0.09);
+  transform: translateY(-3px);
+}
+
+.karir-badge {
+  display: inline-block;
+  background: #fde4e6;
+  color: #c4172a;
+  font: 700 10px "Plus Jakarta Sans";
+  letter-spacing: 0.6px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.karir-card h3 {
+  font: 700 19px/1.25 "Plus Jakarta Sans";
+  letter-spacing: -0.7px;
+  margin: 0 0 6px;
+}
+
+.karir-meta {
+  color: #718497;
+  font: 700 11px "Plus Jakarta Sans";
+  letter-spacing: 0.5px;
+  margin: 0 0 12px;
+}
+
+.karir-desc {
+  color: #64798d;
+  font-size: 13px;
+  margin: 0 0 14px;
+  line-height: 1.55;
+}
+
+.karir-req {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.karir-req li {
+  background: #f4f8fa;
+  color: #5a6878;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.karir-apply {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.karir-apply span {
+  font-size: 17px;
+}
+
 .contact-banner {
   background: linear-gradient(105deg, #006cb8, #004a80);
 
@@ -2298,6 +2388,14 @@ footer > div a:not(.brand) {
 
   .news-image {
     height: 195px;
+  }
+
+  .karir-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .karir-card {
+    padding: 22px;
   }
 
   .contact-content {
