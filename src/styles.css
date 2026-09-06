@@ -2275,6 +2275,15 @@ footer > div a:not(.brand) {
     padding: 10px 16px;
     font-size: 12px;
   }
+
+  .schedule-results .doctor-card {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .schedule-results .doctor-schedule {
+    width: 100%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -3303,5 +3312,152 @@ footer > div a:not(.brand) {
 
   .kontak-grid {
     padding: 40px 0;
+  }
+
+  /* Tentang - Sejarah mobile fixes */
+  .tentang-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 20px 0;
+    margin: 28px 0;
+  }
+
+  .stat-item strong {
+    font-size: 26px;
+  }
+
+  .stat-item span {
+    font-size: 12px;
+  }
+
+  .tentang-grid {
+    margin: 32px 0;
+    gap: 28px;
+  }
+
+  .timeline {
+    padding-left: 28px;
+  }
+
+  .timeline-item {
+    padding-left: 16px;
+    padding-bottom: 22px;
+  }
+
+  .timeline-item::before {
+    left: -35px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .timeline-content h4 {
+    font-size: 14px;
+  }
+
+  .timeline-content p {
+    font-size: 12px;
+  }
+
+  .tentang-visi-misi {
+    margin-top: 32px;
+    gap: 16px;
+  }
+
+  .visi-card,
+  .misi-card {
+    padding: 20px;
+  }
+
+  .misi-card li {
+    font-size: 13px;
+  }
+
+  /* Jadwal Dokter mobile fixes */
+  .schedule-results .doctor-card {
+    flex-direction: column;
+    gap: 14px;
+    padding: 14px;
+  }
+
+  .schedule-results .doctor-schedule {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+    width: 100%;
+  }
+
+  .schedule-results .schedule-item {
+    min-width: unset;
+    padding: 5px 6px;
+  }
+
+  .schedule-results .schedule-day {
+    font-size: 10px;
+  }
+
+  .schedule-results .schedule-time {
+    font-size: 10px;
+  }
+
+  .schedule-results .doctor-info h3 {
+    font-size: 14px;
+  }
+
+  .schedule-results .doctor-specialty {
+    font-size: 12px;
+  }
+
+  .schedule-results .doctor-poli {
+    font-size: 11px;
+  }
+
+  .doctor-today-time {
+    font-size: 12px;
+  }
+}
+
+/* ── Scroll to Top ─────────────────────────────────── */
+.scroll-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: var(--navy);
+  color: var(--white);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(16px);
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    transform 0.3s ease,
+    background 0.2s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top--visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-top:hover {
+  background: #005a9e;
+}
+
+@media (max-width: 640px) {
+  .scroll-top {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
   }
 }

@@ -11,6 +11,7 @@ import Berita from './components/Berita';
 import Kontak from './components/Kontak';
 import Social from './components/Social';
 import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Social />
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   );
 }
